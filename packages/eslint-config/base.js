@@ -27,6 +27,15 @@ export const config = [
     },
   },
   {
-    ignores: ["dist/**"],
+    ignores: [
+      ".*.js",
+      "*.setup.js",
+      "*.config.js",
+      ".turbo/",
+      "dist/",
+      "coverage/",
+      "node_modules/",
+      ".husky/",
+    ],
   },
 ];

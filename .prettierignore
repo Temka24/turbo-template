@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Build folders
+dist/
+build/
+.next/
+.out/
+.turbo/
+
+# Configuration / metadata
+*.lock
+*.log
+pnpm-lock.yaml
+package-lock.json
+
+# Git & CI stuff
+.husky/
+coverage/
+.env
+.env.*
+.git
+.gitignore
+
+# Assets
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.webp
+
+# VSCode
+.vscode/
+
+prisma/
