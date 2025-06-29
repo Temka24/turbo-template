@@ -44,6 +44,6 @@ export const nextJsConfig = [
     },
     eslintConfigPrettier,
     {
-        ignores: [".next/", "dist/", "node_modules/"],
+        ignores: [".next/", "dist/", "node_modules/", "postcss.config.*"],
     },
 ];

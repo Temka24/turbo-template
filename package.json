@@ -13,6 +13,7 @@
         "@swc/helpers": "0.5.17",
         "husky": "^9.1.7",
         "lint-staged": "^16.1.2",
+        "lodash.get": "^4.4.2",
         "prettier": "^3.5.3",
         "turbo": "^2.5.4",
         "typescript": "5.8.2"

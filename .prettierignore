@@ -33,3 +33,7 @@ coverage/
 .vscode/
 
 prisma/
+
+**/.prisma
+**/node_modules
+packages/prisma/prisma/schema.prisma
