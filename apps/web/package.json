@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "doppler run -- next dev --turbopack --port 3000",
         "build": "next build",
-        "start": "doppler run -- next start",
+        "start": "next start",
         "lint": "eslint . --max-warnings 0",
         "check-types": "tsc --noEmit"
     },
