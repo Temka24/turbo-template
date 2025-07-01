@@ -18,7 +18,7 @@
         "turbo": "^2.5.4",
         "typescript": "5.8.2"
     },
-    "packageManager": "pnpm@9.0.0",
+    "packageManager": "pnpm@10.12.4",
     "engines": {
         "node": ">=18"
     },
@@ -30,6 +30,20 @@
         "overrides": {
             "rimraf": "^5.0.0",
             "lodash.get": "^4.4.2"
-        }
+        },
+        "ignoredBuiltDependencies": [
+            "unrs-resolver"
+        ],
+        "onlyBuiltDependencies": [
+            "@nestjs/core",
+            "@swc/core",
+            "@tailwindcss/oxide",
+            "core-js-pure",
+            "sharp"
+        ]
+    },
+    "dependencies": {
+        "react": "18.3.1",
+        "react-dom": "18.3.1"
     }
 }
