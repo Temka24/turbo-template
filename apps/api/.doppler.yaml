@@ -1,2 +1,8 @@
 project: turbo_test
-config: dev
+environments:
+    dev:
+        config: dev
+    preview:
+        config: staging
+    production:
+        config: prod
