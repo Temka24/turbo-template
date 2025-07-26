@@ -1,7 +1,14 @@
 {
     "$schema": "https://turborepo.com/schema.json",
     "ui": "tui",
-    "globalEnv": ["DOPPLER_CONFIG", "DOPPLER_ENVIRONMENT", "DOPPLER_PROJECT", "NODE_ENV"],
+    "globalEnv": [
+        "DOPPLER_CONFIG",
+        "DOPPLER_ENVIRONMENT",
+        "DOPPLER_PROJECT",
+        "DATABASE_URL",
+        "NODE_ENV",
+        "PORT"
+    ],
     "tasks": {
         "prisma:generate": {
             "outputs": ["node_modules/.prisma", "node_modules/@prisma"]
