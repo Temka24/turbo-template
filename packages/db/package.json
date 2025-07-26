@@ -7,6 +7,7 @@
     "type": "module",
     "scripts": {
         "generate": "doppler run -- prisma generate",
+        "generate:prod": "prisma generate",
         "migrate:deploy": "prisma migrate deploy",
         "migrate:dev": "doppler run -- prisma migrate dev",
         "studio": "doppler run -- prisma studio"
