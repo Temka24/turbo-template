@@ -18,7 +18,7 @@
         "turbo": "^2.5.4",
         "typescript": "5.8.2"
     },
-    "packageManager": "pnpm@10.12.4",
+    "packageManager": "pnpm@10.13.1",
     "engines": {
         "node": ">=18"
     },
@@ -32,6 +32,10 @@
             "lodash.get": "^4.4.2"
         },
         "ignoredBuiltDependencies": [
+            "@prisma/client",
+            "@prisma/engines",
+            "@scarf/scarf",
+            "prisma",
             "unrs-resolver"
         ],
         "onlyBuiltDependencies": [

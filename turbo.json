@@ -1,29 +1,29 @@
 {
     "$schema": "https://turborepo.com/schema.json",
     "ui": "tui",
+    "globalEnv": ["DOPPLER_CONFIG", "DOPPLER_ENVIRONMENT", "DOPPLER_PROJECT", "NODE_ENV"],
     "tasks": {
-        "build": {
-            "dependsOn": ["^build"],
-            "inputs": ["$TURBO_DEFAULT$", ".env*"],
-            "outputs": [".next/**", "!.next/cache/**"]
+        "prisma:generate": {
+            "outputs": ["node_modules/.prisma", "node_modules/@prisma"]
         },
+
+        "build": {
+            "dependsOn": ["^build", "^prisma:generate"],
+            "inputs": ["$TURBO_DEFAULT$", ".env*"],
+            "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+        },
+
         "lint": {
             "dependsOn": ["^lint"]
         },
+
         "check-types": {
             "dependsOn": ["^check-types"]
         },
+
         "dev": {
             "cache": false,
             "persistent": true
         }
-    },
-    "globalEnv": [
-        "DOPPLER_CONFIG",
-        "DOPPLER_ENVIRONMENT",
-        "DOPPLER_PROJECT",
-        "NODE_ENV",
-        "PORT",
-        "NEXT_PUBLIC_TEST"
-    ]
+    }
 }
