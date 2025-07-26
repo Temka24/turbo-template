@@ -6,7 +6,7 @@
     "private": true,
     "license": "UNLICENSED",
     "scripts": {
-        "build": "DEBUG=* nest build",
+        "build": "pnpm exec tsc -p tsconfig.build.json",
         "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
         "start": "doppler run -- nest start",
         "start:dev": "doppler run -- nest start --watch",
