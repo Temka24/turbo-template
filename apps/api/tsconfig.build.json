@@ -7,7 +7,6 @@
         "baseUrl": ".",
         "paths": {
             "@repo/types": ["../../packages/types/src"],
-            "@repo/db": ["../../packages/db/src"],
             "@repo/validation": ["../../packages/validation/src"],
             "src/*": ["src/*"],
             "*": ["node_modules/*"]

@@ -17,7 +17,6 @@
         "target": "ES2022",
         "paths": {
             "@repo/types": ["packages/types/src/index.ts"],
-            "@repo/db": ["packages/db/src"],
             "@repo/validation": ["packages/validation/src/index.ts"]
         }
     }
