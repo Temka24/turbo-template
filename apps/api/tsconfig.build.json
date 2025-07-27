@@ -4,7 +4,24 @@
         "declaration": true,
         "emitDeclarationOnly": false,
         "outDir": "dist",
-        "rootDir": "src"
+        "baseUrl": ".",
+        "paths": {
+            "@repo/types": ["../../packages/types/src"],
+            "@repo/db": ["../../packages/db/src"],
+            "@repo/validation": ["../../packages/validation/src"],
+            "src/*": ["src/*"],
+            "*": ["node_modules/*"]
+        }
+    },
+    "tsc-alias": {
+        "replacers": {
+            "base-url": {
+                "enabled": true
+            },
+            "paths": {
+                "enabled": true
+            }
+        }
     },
     "include": ["src"],
     "exclude": ["test", "**/*spec.ts"]
